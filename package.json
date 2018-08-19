@@ -1,29 +1,30 @@
 {
-  "name": "jflap-webapp",
+  "name": "flap.js",
   "version": "1.0.0",
-  "description": "Repository for the JFLAP webapp project",
-  "main": "./dist/bundle.js",
+  "description": "Repository for flap.js web app project",
+  "main": "./docs/debug/bundle.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --config webpack.config.js",
     "build": "webpack --mode production --config webpack.config.js",
-    "test": "webpack --config webpack.test.config.js && node ./dist/debug/bundle.js"
+    "test": "webpack --config webpack.test.config.js && node ./docs/debug/bundle.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JFLAP/JFLAP-WebApp.git"
+    "url": "git+https://github.com/flapjs/FLAPJS-WebApp.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JFLAP/JFLAP-WebApp/issues"
+    "url": "https://github.com/flapjs/FLAPJS-WebApp/issues"
   },
-  "homepage": "https://github.com/JFLAP/JFLAP-WebApp#readme",
+  "homepage": "https://github.com/flapjs/FLAPJS-WebApp#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
     "style-loader": "^0.21.0",
